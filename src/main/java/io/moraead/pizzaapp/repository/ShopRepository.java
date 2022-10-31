@@ -1,6 +1,5 @@
 package io.moraead.pizzaapp.repository;
 
-import io.moraead.pizzaapp.model.Pizza;
 import io.moraead.pizzaapp.model.Shop;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
