@@ -3,6 +3,7 @@ package io.moraead.pizzaapp.domain;
 public class Pizza {
     private Long id;
     private String title;
+    private String coverPhotoURL;
     private double price;
     private boolean veg;
 
@@ -36,5 +37,13 @@ public class Pizza {
 
     public void setVeg(boolean veg) {
         this.veg = veg;
+    }
+
+    public String getCoverPhotoURL() {
+        return coverPhotoURL;
+    }
+
+    public void setCoverPhotoURL(String coverPhotoURL) {
+        this.coverPhotoURL = coverPhotoURL;
     }
 }
