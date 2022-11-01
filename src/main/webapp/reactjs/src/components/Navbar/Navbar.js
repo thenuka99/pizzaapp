@@ -7,9 +7,9 @@ const Navbar = () => {
             <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
             <div class="wrapper">
                 <ul>
-                    <li><a href="#">Pizza</a></li>
-                    <li><a href="#">Employee</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="/pizza">Pizza</a></li>
+                    <li><a href="/">Employee</a></li>
+                    <li><a href="/shop">Shop</a></li>
                 </ul>
             </div>
         </div>

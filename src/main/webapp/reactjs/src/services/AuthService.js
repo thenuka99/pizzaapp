@@ -27,7 +27,7 @@ export const loademployees = () => {
 };
 
 export const loademployee = (id) => {
-  return axios.get(baseUrl + '/employee/' + id, {
+  return axios.get(baseUrl + '/employee/id/' + id, {
     headers: {
       'Content-Type': 'application/json',
     },
