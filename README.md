@@ -1,19 +1,18 @@
 # pizzaapp
 admin panel for pizza shop chain
-## E-Channeling
+## Pizza-App 
 This is an admin panel for pizza shop chain web application. With the below functionalities.
 
-1. Patients/users can search doctors' availability in various hospitals by choosing a hospital or specialization or doctors name.
+1. Orders can be placed as a one item at a time or multiple items at a time.
 
-2. When the search results are displayed, the user can place an appointment by filling a form.
+2. The admins of the system can register the employees to the system.
 
-3. The admins of the system can register the doctors to the system.
+3. The admins of the system can create,update,delete employee profiles amd view all the profiles of employees.
 
-4. The admins of the system can create a doctor's session by allocating a date and a time slot, in a particular hospital.
+4. Using admin panel admin can also view the pizza menu,add new items and delete and update existing items. 
 
-5. Doctors list and channeling time slots are displayed.
+5. Admin panel can view all the shop list, update and delete existing shops. Also can add shops to the system.
 
-So basically, this system is having customer interaction as well as admin interaction functionalities.
 
 ## Folder/file structure
 The names of the folders and files. 
@@ -21,44 +20,29 @@ The names of the folders and files.
 moraead
 ├── pizzaapp                            
 |   ├── controller                              
-| 	|   ├── AppointmentController.java           
-| 	|   ├── ChannelController.java     
-| 	|   ├── DoctorController.java  
-| 	|   ├── HospitalController.java
-| 	|   ├── SearchController.java
-| 	|   ├── SpecializationController.java
+| 	|   ├── EmployeeController.java           
+| 	|   ├── PizzaController.java     
+| 	|   ├── ShopController.java  
 |   ├── model                              
-| 	|   ├── Appointment           
-| 	|   ├── Channel     
-| 	|   ├── Doctor  
-| 	|   ├── DoctorHospital
-| 	|   ├── Hospital
-| 	|   ├── Specialization
+| 	|   ├── Employee           
+| 	|   ├── Pizza    
+| 	|   ├── Shop  
 |   ├── repository                              
-| 	|   ├── IAppointmentRepository           
-| 	|   ├── IChannelRepository 
-| 	|   ├── IDoctorRepository  
-| 	|   ├── IDoctorHospitalRepository
-| 	|   ├── IHospitalRepository
-| 	|   ├── ISpecializationRepository
+| 	|   ├── EmployeeRepository           
+| 	|   ├── PizzaRepository 
+| 	|   ├── ShopRepository  
 |   ├── service
-| 	|   ├── implementation
-| 	|   |    ├── AppointmentService
-| 	|   |    ├── ChannelService
-| 	|   |    ├── DoctorService
-| 	|   |    ├── HospitalService
-| 	|   |    ├── SearchService
-| 	|   |    ├── SpecializationService
-| 	|   ├── IAppointmentService           
-| 	|   ├── IChannelService 
-| 	|   ├── IDoctorService  
-| 	|   ├── IHospitalService
-| 	|   ├── ISearchService
-| 	|   ├── ISpecializationService
+| 	|   ├── EmployeeService
+| 	|   ├── IEmployeeService
+| 	|   ├── IPizzaService
+| 	|   ├── IShopService
+| 	|   ├── PizzaService
+| 	|   ├── ShopService
 
 ## Group Members
  * Janith Herath
- * 
- * 
- * 
- * 
+ * Athmaja Madapatha
+ * Isanjalee Silva
+ * Janani De Silva
+ * Udara Nanayakkara
+ * Tharushi Dimalsha
