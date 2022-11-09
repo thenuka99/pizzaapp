@@ -20,15 +20,6 @@ public class EmloyeeService implements IEmployeeService{
     }
 
     @Override
-    public List<Employee> findByName(String fName) {
-        log.info("####### FIND BY First Name {} ",fName);
-        List<Employee> employeeList = employeeRepository.findByName(fName);
-        log.info("####### FIND BY employeeList {} ",employeeList);
-        return employeeList;
-    }
-
-
-    @Override
     public List<Employee> findAll() {
         return employeeRepository.findAll();
     }

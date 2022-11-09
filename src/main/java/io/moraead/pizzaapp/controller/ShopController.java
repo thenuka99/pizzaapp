@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/shop")
 public class ShopController {
 
@@ -22,25 +22,20 @@ public class ShopController {
         return shopService.findAll();
     }
 
-    @GetMapping("/name/{name}")
-    public List<Shop> getShopsByName(@PathVariable String name){
-        return shopService.findByName(name);
-    }
-
     @GetMapping("/id/{id}")
     public Shop getShopsById(@PathVariable String id){
         return shopService.findById(id);
     }
 
     @PostMapping("/create")
-    public Shop create(@RequestBody Shop pizza){
-        pizza.setShopId(UUID.randomUUID().toString());
-        return shopService.create(pizza);
+    public Shop create(@RequestBody Shop shop){
+        shop.setShopId(UUID.randomUUID().toString());
+        return shopService.create(shop);
     }
 
     @PutMapping("/update")
-    public Shop update(@RequestBody Shop pizza){
-        return shopService.update(pizza);
+    public Shop update(@RequestBody Shop shop){
+        return shopService.update(shop);
     }
 
     @DeleteMapping("/delete/{id}")

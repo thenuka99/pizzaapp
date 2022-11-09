@@ -46,7 +46,7 @@ export const updateemployee = (data) => {
 
 //pizza
 export const addpizza = (data) => {
-  return axios.post(baseUrl + '/employee/create', data, {
+  return axios.post(baseUrl + '/pizza/create', data, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -54,7 +54,7 @@ export const addpizza = (data) => {
 };
 
 export const deletepizza = (id) => {
-  return axios.delete(baseUrl + '/employee/delete/' + id, {
+  return axios.delete(baseUrl + '/pizza/delete/' + id, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -62,7 +62,7 @@ export const deletepizza = (id) => {
 };
 
 export const loadpizzas = () => {
-  return axios.get(baseUrl + '/employee/all', {
+  return axios.get(baseUrl + '/pizza/all', {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -70,7 +70,7 @@ export const loadpizzas = () => {
 };
 
 export const loadpizza = (id) => {
-  return axios.get(baseUrl + '/employee/id/' + id, {
+  return axios.get(baseUrl + '/pizza/id/' + id, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -78,7 +78,7 @@ export const loadpizza = (id) => {
 };
 
 export const updatepizza = (data) => {
-  return axios.put(baseUrl + '/employee/update', data, {
+  return axios.put(baseUrl + '/pizza/update', data, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -87,7 +87,7 @@ export const updatepizza = (data) => {
 
 //shops
 export const addshop = (data) => {
-  return axios.post(baseUrl + '/employee/create', data, {
+  return axios.post(baseUrl + '/shop/create', data, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -95,7 +95,7 @@ export const addshop = (data) => {
 };
 
 export const deleteshop = (id) => {
-  return axios.delete(baseUrl + '/employee/delete/' + id, {
+  return axios.delete(baseUrl + '/shop/delete/' + id, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -103,7 +103,7 @@ export const deleteshop = (id) => {
 };
 
 export const loadshops = () => {
-  return axios.get(baseUrl + '/employee/all', {
+  return axios.get(baseUrl + '/shop/all', {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -111,7 +111,7 @@ export const loadshops = () => {
 };
 
 export const loadshop = (id) => {
-  return axios.get(baseUrl + '/employee/id/' + id, {
+  return axios.get(baseUrl + '/shop/id/' + id, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -119,7 +119,7 @@ export const loadshop = (id) => {
 };
 
 export const updateshop = (data) => {
-  return axios.put(baseUrl + '/employee/update', data, {
+  return axios.put(baseUrl + '/shop/update', data, {
     headers: {
       'Content-Type': 'application/json',
     },

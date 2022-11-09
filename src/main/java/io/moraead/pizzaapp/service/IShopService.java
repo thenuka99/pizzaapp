@@ -8,8 +8,6 @@ public interface IShopService {
 
     Shop create(Shop shop);
 
-    List<Shop> findByName(String name);
-
     List<Shop> findAll();
 
     void delete(String id);

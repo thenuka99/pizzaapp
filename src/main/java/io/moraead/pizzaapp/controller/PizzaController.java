@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/pizza")
 public class PizzaController {
     
@@ -20,11 +20,6 @@ public class PizzaController {
     @GetMapping("/all")
     public List<Pizza> getAllPizzas(){
         return pizzaService.findAll();
-    }
-
-    @GetMapping("/title/{title}")
-    public List<Pizza> getPizzasByTitle(@PathVariable String title){
-        return pizzaService.findByTitle(title);
     }
 
     @GetMapping("/id/{id}")

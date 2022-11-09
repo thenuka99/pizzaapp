@@ -7,8 +7,6 @@ import java.util.List;
 public interface IPizzaService {
     Pizza create(Pizza pizza);
 
-    List<Pizza> findByTitle(String title);
-
     List<Pizza> findAll();
 
     void delete(String id);

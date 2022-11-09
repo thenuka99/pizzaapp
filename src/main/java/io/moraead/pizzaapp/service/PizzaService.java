@@ -19,14 +19,6 @@ public class PizzaService implements IPizzaService{
     }
 
     @Override
-    public List<Pizza> findByTitle(String title) {
-        log.info("####### FIND BY TITLE {} ",title);
-        List<Pizza> pizzaList = pizzaRepository.findByTitle(title);
-        log.info("####### FIND BY blogList {} ",pizzaList);
-        return pizzaList;
-    }
-
-    @Override
     public List<Pizza> findAll() {
         return pizzaRepository.findAll();
     }

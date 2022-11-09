@@ -22,25 +22,20 @@ public class EmployeeController {
         return employeeService.findAll();
     }
 
-    @GetMapping("/name/{fName}")
-    public List<Employee> getEmployeesByName(@PathVariable String fName){
-        return employeeService.findByName(fName);
-    }
-
     @GetMapping("/id/{id}")
     public Employee getEmployeesById(@PathVariable String id){
         return employeeService.findById(id);
     }
 
     @PostMapping("/create")
-    public Employee create(@RequestBody Employee pizza){
-        pizza.setEmployeeId(UUID.randomUUID().toString());
-        return employeeService.create(pizza);
+    public Employee create(@RequestBody Employee employee){
+        employee.setEmployeeId(UUID.randomUUID().toString());
+        return employeeService.create(employee);
     }
 
     @PutMapping("/update")
-    public Employee update(@RequestBody Employee pizza){
-        return employeeService.update(pizza);
+    public Employee update(@RequestBody Employee employee){
+        return employeeService.update(employee);
     }
 
     @DeleteMapping("/delete/{id}")

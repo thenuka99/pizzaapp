@@ -40,9 +40,9 @@ const AddPizzaComponent = () => {
         <label className='label'>price</label>
         <div className='currentpass'>
           <input
-            type='text'
-            id='lname'
-            name='lname'
+            type='number'
+            id='price'
+            name='price'
             placeholder='Your last name'
             size='60'
             maxLength='100'

@@ -19,16 +19,6 @@ public class ShopService implements IShopService{
         return shopRepository.save(shop);
     }
 
-
-    @Override
-    public List<Shop> findByName(String name) {
-        log.info("####### FIND BY Name {} ",name);
-        List<Shop> shopList = shopRepository.findByName(name);
-        log.info("####### FIND BY shopList {} ",shopList);
-        return shopList;
-    }
-
-
     @Override
     public List<Shop> findAll() {
         return shopRepository.findAll();
