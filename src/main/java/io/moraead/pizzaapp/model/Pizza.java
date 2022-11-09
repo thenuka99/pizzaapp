@@ -17,7 +17,6 @@ public class Pizza {
     @Id
     private String pizzaId;
     private String title;
-    private String coverPhotoURL;
     private double price;
     private boolean veg;
 }

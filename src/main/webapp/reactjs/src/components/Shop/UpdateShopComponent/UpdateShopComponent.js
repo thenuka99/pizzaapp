@@ -6,4 +6,4 @@ const UpdateShopComponent = () => {
   )
 }
 
-export default UpdateShopComponent
+export default UpdateShopComponent;

@@ -6,4 +6,4 @@ const ShopListComponent = () => {
   )
 }
 
-export default ShopListComponent
+export default ShopListComponent;
