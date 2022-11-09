@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import {updateemployee,loademployee} from '../../services/AuthService';
+import {updateemployee,loademployee} from '../../../services/AuthService';
 import { useParams } from 'react-router-dom';
 
 const UpdateEmployeeComponent = () => {
@@ -32,6 +32,7 @@ const UpdateEmployeeComponent = () => {
         console.log(e);
         try {
             const response = await updateemployee({
+                employeeId:id,
                 fname: e.target.fname.value,
                 lname: e.target.lname.value,
                 address: e.target.address.value,
@@ -39,7 +40,7 @@ const UpdateEmployeeComponent = () => {
                 email: e.target.email.value
             });
             console.log(response);
-            navigate("/");
+            navigate("/employee");
         } catch (e) {
             console.log(e);
         }

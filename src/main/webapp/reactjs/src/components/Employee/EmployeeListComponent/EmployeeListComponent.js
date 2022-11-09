@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './EmployeeListComponent.css';
 import { Link } from 'react-router-dom';
-import { deleteemployee, loademployees} from '../../services/AuthService';
+import { deleteemployee, loademployees} from '../../../services/AuthService';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 

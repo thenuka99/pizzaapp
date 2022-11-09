@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import {addemployee} from '../../services/AuthService';
+import {addemployee} from '../../../services/AuthService';
 
 
 const AddEmployeeComponent = () => {
@@ -19,7 +19,7 @@ const AddEmployeeComponent = () => {
                 email: e.target.email.value
             });
             console.log(response);
-            navigate("/");
+            navigate("/employee");
         } catch (e) {
             console.log(e);
         }

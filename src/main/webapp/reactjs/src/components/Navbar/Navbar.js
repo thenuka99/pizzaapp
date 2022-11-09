@@ -8,7 +8,7 @@ const Navbar = () => {
             <div class="wrapper">
                 <ul>
                     <li><a href="/pizza">Pizza</a></li>
-                    <li><a href="/">Employee</a></li>
+                    <li><a href="/employee">Employee</a></li>
                     <li><a href="/shop">Shop</a></li>
                 </ul>
             </div>
