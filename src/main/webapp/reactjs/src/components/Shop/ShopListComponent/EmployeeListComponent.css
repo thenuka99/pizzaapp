@@ -1,64 +1,65 @@
-.category_container{
+.category_container {
   padding: 10px 15px 15px 10px;
   margin-top: 20px;
 }
-  table {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
-  }
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  table tr {
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    padding: .35em; 
-    display: block;
-    margin-bottom: .625em;
-    box-shadow: 10px 10px 5px grey;
-  }
-  
-  table th,
-  table td {
-    padding: .625em;
-    text-align: center;
-  }
-  
-  table th {
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    font-weight: 700;
-    text-align: right;
-  }
-  
-  table td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
-  .fa-trash{
-    color: rgb(145, 0, 0);
-  }
+table {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+table tr {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+  display: block;
+  margin-bottom: 0.625em;
+  box-shadow: 10px 10px 5px grey;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+table td {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-align: right;
+}
+
+table td::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table td:last-child {
+  border-bottom: 0;
+}
+.fa-trash {
+  color: rgb(145, 0, 0);
+}
+

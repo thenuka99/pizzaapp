@@ -40,7 +40,7 @@ const ShopListComponent = () => {
 
   return (
       <div className='category_container'>
-          <button>
+          <button className='btnAdd'>
           <a href="/addshop"> Add Shop</a>
           </button>
 
