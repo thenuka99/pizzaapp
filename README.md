@@ -17,28 +17,40 @@ This is an admin panel for pizza shop chain web application. With the below func
 ## Folder/file structure
 The names of the folders and files. 
 
-moraead
-├── pizzaapp                            
-|   ├── controller                              
-| 	|   ├── EmployeeController.java           
-| 	|   ├── PizzaController.java     
-| 	|   ├── ShopController.java  
-|   ├── model                              
-| 	|   ├── Employee           
-| 	|   ├── Pizza    
-| 	|   ├── Shop  
-|   ├── repository                              
-| 	|   ├── EmployeeRepository           
-| 	|   ├── PizzaRepository 
-| 	|   ├── ShopRepository  
-|   ├── service
-| 	|   ├── EmployeeService
-| 	|   ├── IEmployeeService
-| 	|   ├── IPizzaService
-| 	|   ├── IShopService
-| 	|   ├── PizzaService
-| 	|   ├── ShopService
+```
+.
+└── pizzaapp
+    ├── .dist
+    ├── .mvn
+    └── src
+        └── main
+            ├── java\io\moraead\pizzaapp
+            │   ├── config
+            │   │   └── MongoConfiguration.java
+            │   ├── controller
+            │   │   ├── EmployeeController.java
+            │   │   ├── PizzaController.java
+            │   │   └── ShopController.java
+            │   ├── model
+            │   │   ├── Pizza
+            │   │   ├── Shop
+            │   │   └── Employee
+            │   ├── repository
+            │   │   ├── EmployeeRepository
+            │   │   ├── PizzaRepository
+            │   │   └── ShopRepository
+            │   └── service
+            │       ├── EmployeeService
+            │       ├── IEmployeeService
+            │       ├── IPizzaService
+            │       ├── IShopService
+            │       ├── PizzaService
+            │       └── ShopService
+            ├── resources
+            │   └── application.properties
+            └── webapp/reactjs
 
+```
 ## Group Members
  * Janith Herath
  * Athmaja Madapatha
