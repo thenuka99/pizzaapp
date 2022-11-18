@@ -25,17 +25,12 @@ const PizzaListComponent = () => {
       }
   };
 
-  const Deletepizza = async(id) => {
-      try {
-          
-          const response = await deletepizza(id);
-          console.log('item deleted');
-          console.log(response);
-          LoadPizzas();
-      } catch (e) {
-          console.log(e);
-      }
-  };
+    const Deletepizza  = (item) => {
+        setPizzas((prevState) =>
+          prevState.filter((prevItem) => prevItem !== item)
+        );
+      };
+    
  
 
   return (
@@ -62,7 +57,7 @@ const PizzaListComponent = () => {
                               <td data-label="price"><h4>Rs.{pizza.price} </h4></td>
                               <td data-label="vegetarian"><h4>{pizza.veg?"yes":"no"} </h4></td>
                               <td data-label="Edit" ><Link to={`/updatepizza/${pizza.pizzaId}`}><EditIcon/></Link> </td>
-                              <td data-label="Delete"><DeleteIcon  onClick={() => Deletepizza(pizza.pizzaId)}/> </td>
+                              <td data-label="Delete"><DeleteIcon  onClick={() => Deletepizza(pizza)}/> </td>
                           </tr>
                       ))
                   }
